@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("AK.png");
+    user-select: none;
+}
+.main{
+    color: white;
+    gap: 20px;
+    height: 100vh;
+    font-family: "Poetsen One", sans-serif;
+}
+.main h1{
+    font-size: 58px;
+}
+.main h1:hover{
+    color: #4872BD;
+    font-size: 45px;
+    transition: all 0.4s ease-in-out;
+}
+.main h1 span{
+    color: #4872BD;
+    transition: all .3s;
+}
+.main h1 span:hover{
+    color: white;
+    font-size: 65px;
+    transition: all 0.4s ease-in-out;
+}
+.main h4 img{
+    width: 100px;
+}
+.right ul{
+    list-style: none;
+}
+.right ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:#4872BD;
+    transition: width .3s;
+}
+ul li:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+ul li:first-child:hover{
+    text-decoration: none;
+    transition: all 2s ease-in-out;
+}
+
+.left ul{
+    list-style: none;
+}
+.left ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive @768px */
+@media (max-width: 768px) {
+    .main{
+        text-align: center;
+        height: auto;
+    }
+    .main h4{
+        font-size: 20px;
+    }
+    .main h4 img{
+        width: 70px;
+    }
+    .section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section .left{
+        border: none;
+        align-items: center;
+        border-bottom: 5px solid ;
+    }
+    .section .right{
+        align-items: center !important;
+        border-left: 3px solid red;
+    }
+
+}
